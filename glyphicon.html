@@ -1,0 +1,110 @@
+<div class="container">
+
+
+<div class="row">
+
+	<div class="col-md-6">
+	
+			<h2>{{ title }}TESTING</h2>
+			<p>Below presents live asynchronous reflections.</p>
+			<p>You will find options to test manually, and also change colors with either RGBA properties.</p>
+
+				<div class="well">
+				<h3>Manual Option</h3>
+				<p>Type in the identifier of glyphicons to see the icons.</p>
+					<p>
+					glyphicon glyphicon-
+					<input type="text" ng-model="data.msg">
+					<span class="glyphicon glyphicon-{{data.msg}}"></span>
+					</p>
+				</div>
+
+			<p>Select an option below to see in live view next to type in a h2 tag.</p>
+
+			<div ng-controller="SelectionCtrl">
+				<select class="form-control" ng-model="data.list">
+					<option ng-repeat="opt in selections.list" value="{{opt.val}}">{{opt.name}}<span class="glyphicon glyphicon-{{opt.val}}"></span></option>
+				</select>
+				<br>
+				<h3>Enter an RGBA color:</h3>
+				<form class="form-inline" role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">R</div>
+							<input class="form-control" ng-model="data.colorR" type="number" placeholder="Red">
+						</div>
+					</div> <!-- /red -->
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">R</div>
+							<input class="form-control" ng-model="data.colorB" type="number" placeholder="Blue">
+						</div>
+					</div> <!-- /blue -->
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">R</div>
+							<input class="form-control" ng-model="data.colorG" type="number" placeholder="Green">
+						</div>
+					</div> <!-- /green -->
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">R</div>
+							<input class="form-control" ng-model="data.colorAL" type="number" placeholder="Alpha">
+						</div>
+					</div> <!-- /aplha -->
+				</form>
+					<p>
+						<span style="color:rgba({{data.colorR}},{{data.colorB}},{{data.colorG}},{{data.colorAL}});" class="p14 glyphicon glyphicon-{{data.list}}"></span>&nbsp;
+						<span style="color:rgba({{data.colorR}},{{data.colorB}},{{data.colorG}},{{data.colorAL}});" class="p34 glyphicon glyphicon-{{data.list}}"></span>&nbsp;
+						<span style="color:rgba({{data.colorR}},{{data.colorB}},{{data.colorG}},{{data.colorAL}});" class="p54 glyphicon glyphicon-{{data.list}}"></span>&nbsp;
+						<span style="color:rgba({{data.colorR}},{{data.colorB}},{{data.colorG}},{{data.colorAL}});" class="p74 glyphicon glyphicon-{{data.list}}"></span>&nbsp;
+					</p>
+					<p><small>Copy the code below for the chosen icon, apply to the <code>&lt;span&gt; .class</code></small></p>
+					<pre>glyphicon glyphicon-{{data.list}}</pre>
+
+			</div> <!-- /ng-controller div -->	
+
+	</div> <!-- /col-md-6-->
+
+	<div class="col-md-6 well" ng-app="jjBoot">
+
+		<div ng-controller="SelectionCtrl">
+
+		<p>Use the table for quick reference to some of the built in icons from bootstrap, as opposed to the left column where you type in any values per the API, this is a small sample for quick selections per the AngularJS controller.</p>
+
+		<div class="panel panel-default">
+
+		<div class="panel-heading">
+		Table view for selection reference
+		<div class="input-group">
+			<input class="form-control" type="text" ng-model="search.$" placeholder="search"> <span class="glyphicon glyphicon-search input-group-addon"></span>
+			</div>
+		</div>
+
+		<div class="panel-body">
+			NOTE: Reference <a href="http://getbootstrap.com/">http://getbootstrap.com/</a> for all glyphicons
+		</div>
+
+		<table class="table">
+			<tr ng-repeat="opt in selections.list | filter:search | limitTo: 10">
+				<td>{{opt.name}}</td>
+				<td><span class="glyphicon glyphicon-{{opt.val}}"></span></td>
+			</tr>
+
+		</table>
+
+		</div>
+
+
+		</div> <!-- /ng-controller -->
+
+	</div><!-- /col-md-6 and ng-app=jjBoot -->
+
+</div> <!-- /row -->
+
+
+
+</div> <!-- /container -->
+
+
+

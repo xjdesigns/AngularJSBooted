@@ -32,9 +32,8 @@
 		<div class="collapse navbar-collapse" id="jjMENU">
 			<ul class="nav navbar-nav" ng-controller="navCtrl">
 				<li class="disabled"><a href="../">Back <span class="glyphicon glyphicon-circle-arrow-left"></span></a></li>
-				<li ng-class="{active: $location.path() == '/main'}"><a ng-class="{active: $location.path() == '/main'}" href="#/main">MAIN</a></li>
-				<li ng-class="{active: $location.path() == '/cssBoot'}"><a href="#/cssBoot">CSS</a></li>
-				<li><a href="#">COMPONETS</a></li>
+				<li ng-class="{active: $location.path() == '/main'}"><a ng-class="{active: $location.path() == '/main'}" href="#/main">CLASSES</a></li>
+				<li ng-class="{active: $location.path() == '/glyphicon'}"><a href="#/glyphicon">GLYPHICONS</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
@@ -47,6 +46,27 @@
 
 </nav>
 
+<div class="container-fluid bg-Ggrad btm-margin box-shadow">
+
+	<div class="row">
+
+		<div class="col-md-8 col-md-offset-2 page-header text-center">
+			<h1>BOOTSTRAP TESTING</h1>
+			<p>
+				Welcome to my Bootstrap testing site, powered by AngularJS.
+			</p>
+			<p>
+				Check out the following links to download Bootstrap and AngularJS. Mad props to <a href="https://twitter.com/mdo">@mdo</a> and <a href="https://twitter.com/fat">@fat</a> and the Google Team.
+			</p>
+			<p>
+				<a href="http://getbootstrap.com/" class="btn btn-default">Bootstrap Download <span class="glyphicon glyphicon-open"><span></a>
+				<a href="https://angularjs.org/" class="btn btn-default">AngularJS Download <span class="glyphicon glyphicon-open"><span></a>
+			</p>
+		</div>
+
+	</div>
+
+</div>
 
 
 <div ng-view></div>

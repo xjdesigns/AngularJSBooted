@@ -1,0 +1,99 @@
+<div class="container">
+
+
+<div class="row">
+
+	<div class="col-md-6">
+	
+		<h2>{{ title }} TESTING</h2>
+		<p>This spot you can test classes. Below presents live asynchronous reflections.</p>
+		<p>Test bootstrap here to see reflections in a col-md-6.</p>
+		<div class="alert alert-warning alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		  <strong>Warning!</strong> <small>All Bootstrap options may not work. Values are being applied to the div.</small>
+		</div>
+
+		<div class="well">
+			<p><b>DIV w/ outer and inner DIV</b></p>
+			<input type="text" class="form-control" ng-model="data.message" placeholder="main DIV">
+				<h4>{{data.message}}</h4>
+			<input type="text" class="form-control" ng-model="data.outer" placeholder="outer DIV">
+				<h4>{{data.outer}}</h4>
+			<input type="text" class="form-control" ng-model="data.inner" placeholder="Inner DIV">
+				<h4>{{data.inner}}</h4>
+		</div> <!-- /well -->
+
+			<div class="{{data.message}}">
+				<div class="{{ data.outer }}">
+					This is your <b>TEST</b> area.
+				</div> <!-- /div outer data.outer -->
+				<div class="{{data.inner}}">
+				<p>
+					Above will give you a live text update to check for typing errors.
+				</p>
+				</div> <!--/div inner data.inner -->
+			</div> <!-- /div message data.message -->
+
+		<!-- /end of DIV TESTING -->
+
+		<div class="divider"></div> <!-- /divider -->
+
+		<h2>{{ titleImg }}</h2>
+		<p>This spot you can image display. Below presents live asynchronous reflections.</p>
+		<p>Test bootstrap here to see reflections on an image.</p>
+
+		<div ng-controller="PropCtrl">
+				<select class="form-control" ng-model="data.list">
+					<option ng-repeat="img in pimg.list" value="{{img.cssname}}">{{ img.cssname }}</option>
+				</select>
+			<br>
+			
+			<div class="panel panel-default panel-body">
+				<p>You chose img-{{data.list}}</p>
+					<img id="img" class="img-responsive img-{{data.list}} pull-left" alt="{{img.name}}" src="images/imgField.jpg" width="140" height="140" />
+					<img id="img" class="img-responsive img-{{data.list}} pull-left" alt="{{img.name}}" src="images/imgStorm.jpg" width="140" height="140" />
+					<img id="img" class="img-responsive img-{{data.list}} pull-left" alt="{{img.name}}" src="images/imgNutty.jpg" width="140" height="140" />
+					<img id="img" class="img-responsive img-{{data.list}} pull-left" alt="{{img.name}}" src="images/imgAZ.jpg" width="140" height="140" />
+					<div class="clearfix"></div>
+			</div> <!-- /panel for images -->
+		</div>
+		<br>
+
+	</div> <!-- /col-md-6-->
+
+	<div class="col-md-6" ng-controller='BootCtrl'>
+
+	<div class="well">
+	<div class="panel panel-default">
+
+		<div class="panel-heading">
+			Bootstrap Features
+			<div class="input-group">
+			<input class="form-control" type="text" ng-model="search.$" placeholder="search"> <span class="glyphicon glyphicon-search input-group-addon"></span>
+			</div>
+		</div>
+
+		<div class="panel-body">
+			NOTE: Reference <a href="http://getbootstrap.com/">http://getbootstrap.com/</a> for all features
+		</div>
+		<table class="table">
+			<tr ng-repeat="bootS in booted.list | orderBy:'name' | filter:search">
+				<td>{{bootS.name}}</td>
+				<td>{{bootS.cssname}}</td>
+			</tr>
+		</table>
+
+
+	</div> <!-- /panel -->
+	</div> <!-- /well -->
+
+	</div> <!-- /ng-controller=BootCtrl -->
+
+</div> <!-- /row -->
+
+
+
+</div> <!-- /container -->
+
+
+

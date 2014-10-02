@@ -3,6 +3,40 @@
 body {
 	margin-top:50px;
 }
+table {
+	font-size:13px;
+}
+
+#img {
+	padding:0 5px 5px 0;
+}
+
+#imgAJSBS {
+	padding-top:30px;
+}
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+
+}
+
+.divider {
+	border-bottom:2px solid rgba(200,200,200,1.0);
+	margin:5px 0;
+}
+
+/*sizing for p tags on glyphicon display - mix-ins*/
+.p14 {
+	font-size:14px;
+}
+.p34 {
+	font-size:34px;
+}
+.p54 {
+	font-size:54px;
+}
+.p74 {
+	font-size:74px;
+}
+
 .btm-margin {
 	margin-bottom: 20px;
 }

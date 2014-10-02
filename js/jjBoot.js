@@ -3,13 +3,13 @@
 var jjBoot = angular.module('jjBoot', ['ngRoute']);
 
 jjBoot.config(function($routeProvider) {
-  $routeProvider.when('/cssBoot', {
-      templateUrl: 'cssBoot.html',
-      controller: 'cssBootCtrl',
+  $routeProvider.when('/glyphicon', {
+      templateUrl: 'glyphicon.html',
+      controller: 'glyphBootCtrl',
   });
   $routeProvider.when('/main', {
-      templateUrl: 'binding.html',
-      controller: 'bindingCtrl'
+      templateUrl: 'classes.html',
+      controller: 'classBootCtrl'
   });
 
   $routeProvider.otherwise({ redirectTo: '/main'});
@@ -20,12 +20,37 @@ jjBoot.controller('navCtrl', function($scope, $location) {
   $scope.$location = $location;
 });
 
-jjBoot.controller('cssBootCtrl', function($scope, $location) {
-    $scope.model = { message: 'hello world' }
+jjBoot.controller('classBootCtrl', function($scope, $location) {
+
+  $scope.title = 'CLASS ';
+  $scope.titleImg  = 'IMAGE';
+
 });
 
-jjBoot.controller('bindingCtrl', function($scope, $location) {
+jjBoot.controller('glyphBootCtrl', function($scope, $location, $q) {
+    $scope.title = 'GLYPHICON ';
 
+
+    // var defer = $q.defer();
+
+    // defer.promise
+    //   .then(function(weapon){
+    //       alert('I brought a ' + weapon);
+
+    //       return "bow"
+    //   })
+    //   .then(function(weapon){
+    //       alert('Me too ' + weapon);
+
+    //       return "axe"
+    //   })
+    //   .then(function(weapon){
+    //       alert('and I ' + weapon);
+    //   })
+
+    // defer.resolve("sword");
+
+    $scope.model = { message: 'hello world' }
 });
 
 
@@ -124,5 +149,33 @@ jjBoot.factory('Booted', function() {
 });
 
 function BootCtrl($scope, Booted) {
-	$scope.booted = Booted;
+  $scope.booted = Booted;
+}
+
+jjBoot.factory('pImg', function() {
+  var pImg = {};
+  pImg.list = [
+      {
+        name: "default",
+        cssname: "none"
+      },
+      {
+        name: "Rounded",
+        cssname: "rounded"
+      },
+      {
+        name: "Circle",
+        cssname: "circle"
+      },
+      {
+        name: "Thumbnail",
+        cssname: "thumbnail"
+      }
+    ];
+    return pImg;
+});
+
+function PropCtrl($scope, pImg) {
+  $scope.pimg  = pImg;
+  $scope.data = {list: 'none'}
 }

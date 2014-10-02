@@ -1,0 +1,17 @@
+/* added styles on top of Bootstrao 3.0 */
+
+body {
+	margin-top:50px;
+}
+.btm-margin {
+	margin-bottom: 20px;
+}
+.box-shadow {
+	box-shadow:0px 1px 5px rgba(0,0,0,.6);
+}
+.bg-Ggrad {
+	background: linear-gradient:(top, rgba(46,157,220,1.0), rgba(116,212,255,1.0));
+	background: -webkit-linear-gradient(top, rgba(46,157,220,1.0), rgba(116,212,255,1.0));
+	background: -moz-linear-gradient(top, rgba(46,157,220,1.0), rgba(166,212,255,1.0));
+	background: -ms-linear-gradient(top, rgba(46,157,220,1.0), rgba(116,212,255,1.0))
+}

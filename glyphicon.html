@@ -5,7 +5,7 @@
 
 	<div class="col-md-6">
 	
-			<h2>{{ title }}TESTING</h2>
+			<h2>{{ title }}TESTING <span class="glyphicon glyphicon-edit"></span></h2>
 			<p>Below presents live asynchronous reflections.</p>
 			<p>You will find options to test manually, and also change colors with either RGBA properties.</p>
 
@@ -36,19 +36,19 @@
 					</div> <!-- /red -->
 					<div class="form-group">
 						<div class="input-group">
-							<div class="input-group-addon">R</div>
+							<div class="input-group-addon">G</div>
 							<input class="form-control" ng-model="data.colorB" type="number" placeholder="Blue">
 						</div>
 					</div> <!-- /blue -->
 					<div class="form-group">
 						<div class="input-group">
-							<div class="input-group-addon">R</div>
+							<div class="input-group-addon">B</div>
 							<input class="form-control" ng-model="data.colorG" type="number" placeholder="Green">
 						</div>
 					</div> <!-- /green -->
 					<div class="form-group">
 						<div class="input-group">
-							<div class="input-group-addon">R</div>
+							<div class="input-group-addon">&#945;</div>
 							<input class="form-control" ng-model="data.colorAL" type="number" placeholder="Alpha">
 						</div>
 					</div> <!-- /aplha -->
@@ -59,8 +59,10 @@
 						<span style="color:rgba({{data.colorR}},{{data.colorB}},{{data.colorG}},{{data.colorAL}});" class="p54 glyphicon glyphicon-{{data.list}}"></span>&nbsp;
 						<span style="color:rgba({{data.colorR}},{{data.colorB}},{{data.colorG}},{{data.colorAL}});" class="p74 glyphicon glyphicon-{{data.list}}"></span>&nbsp;
 					</p>
-					<p><small>Copy the code below for the chosen icon, apply to the <code>&lt;span&gt; .class</code></small></p>
+					<p><small>Copy the code below for the chosen icon, apply to the <code>&lt;span class=""&gt;</code></small></p>
 					<pre>glyphicon glyphicon-{{data.list}}</pre>
+					<p><small>Copy the code below for the chosen icon, apply to the <code>&lt;tag style=""&gt;</code></small></p>
+					<pre>color:rgba({{data.colorR}},{{data.colorB}},{{data.colorG}},{{data.colorAL}})</pre>
 
 			</div> <!-- /ng-controller div -->	
 
@@ -86,7 +88,7 @@
 		</div>
 
 		<table class="table">
-			<tr ng-repeat="opt in selections.list | filter:search | limitTo: 10">
+			<tr ng-repeat="opt in selections.list | filter:search | limitTo: 20">
 				<td>{{opt.name}}</td>
 				<td><span class="glyphicon glyphicon-{{opt.val}}"></span></td>
 			</tr>

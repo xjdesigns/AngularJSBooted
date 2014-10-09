@@ -86,7 +86,63 @@ jjBoot.factory('Selections', function() {
 		{
 			name: 'Map Marker Icon',
 			val: 'map-marker'
-		}
+		},
+    {
+      name: 'Off',
+      val: 'off'
+    },
+    {
+      name: 'Road',
+      val: 'road'
+    },
+    {
+      name: 'Zoom-in',
+      val: 'zoom-in'
+    },
+    {
+      name: 'Home',
+      val: 'home'
+    },
+    {
+      name: 'Time',
+      val: 'time'
+    },
+    {
+      name: 'File',
+      val: 'file'
+    },
+    {
+      name: 'Repeat',
+      val: 'repeat'
+    },
+    {
+      name: 'Trash',
+      val: 'trash'
+    },
+    {
+      name: 'Download',
+      val: 'download'
+    },
+    {
+      name: 'Search',
+      val: 'search'
+    },
+    {
+      name: 'List-alt',
+      val: 'list-alt'
+    },
+    {
+      name: 'Flag',
+      val: 'flag'
+    },
+    {
+      name: 'Print',
+      val: 'print'
+    },
+    {
+      name: 'Fire',
+      val: 'fire'
+    }
 	];
 	return Selections;
 });
@@ -143,6 +199,22 @@ jjBoot.factory('Booted', function() {
       {
         name: "Progress Bar (requires inner div)",
         cssname: "progress(outer), progress-bar(inner)"
+      },
+      {
+        name: 'Table (multiple classes)',
+        cssname: 'table, table-responsive, table-bordered, table-hover, table-striped'
+      },
+      {
+        name: 'Diabled',
+        cssname: 'disabled'
+      },
+      {
+        name: 'Pulls for floating',
+        cssname: 'pull-left, pull-right'
+      },
+      {
+        name: 'Clearfix (clears a float class)',
+        cssname: 'clearfix'
       }
     ];
     return Booted;

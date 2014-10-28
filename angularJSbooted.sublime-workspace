@@ -1,0 +1,206 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"reti",
+				"restrict"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jasonjacobson/xJD/GIT/AngularJSBooted/index.html",
+		"/Users/jasonjacobson/xJD/GIT/AngularJSBooted/js/jjBoot.js",
+		"/Users/jasonjacobson/xJD/GIT/AngularJSBooted/classes.html",
+		"/Users/jasonjacobson/xJD/GIT/AngularJSBooted/glyphicon.html",
+		"/Users/jasonjacobson/xJD/GIT/LESS_Tutorial/css/styles.css",
+		"/Users/jasonjacobson/Library/Application Support/Sublime Text 3/Packages/User/Firefox.sublime-build",
+		"/Users/jasonjacobson/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jasonjacobson/xJD/GIT/theSite/js/jjBoot.js",
+		"/Users/jasonjacobson/xJD/GIT/theSite/index.html",
+		"/Users/jasonjacobson/xJD/GIT/theSite/work.html",
+		"/Users/jasonjacobson/xJD/GIT/theSite/home.html",
+		"/Users/jasonjacobson/xJD/GIT/LESS_Tutorial/indexxx.html",
+		"/Users/jasonjacobson/xJD/GIT/LESS_Tutorial/index.html",
+		"/Users/jasonjacobson/xJD/GIT/angularLogin/home.html",
+		"/Users/jasonjacobson/xJD/GIT/angularLogin/js/jjBoot.js",
+		"/Users/jasonjacobson/xJD/GIT/LESS_Tutorial/indexx.html",
+		"/Users/jasonjacobson/xJD/GIT/angularLogin/js/app.js",
+		"/Users/jasonjacobson/xJD/GIT/angularLogin/login.html",
+		"/Users/jasonjacobson/xJD/GIT/angularLogin/index.html",
+		"/Users/jasonjacobson/xJD/GIT/LESS_Tutorial/css/less.css",
+		"/Users/jasonjacobson/xJD/GIT/theSite/css/styles.css",
+		"/Users/jasonjacobson/xJD/GIT/LESS_Tutorial/styles.less",
+		"/Users/jasonjacobson/Desktop/angularTEST/js/angular.js",
+		"/Users/jasonjacobson/Desktop/angularTEST/home.html",
+		"/Users/jasonjacobson/Desktop/angularTEST/login.html",
+		"/Users/jasonjacobson/Desktop/angularTEST/js/main.js",
+		"/Users/jasonjacobson/Desktop/angularTEST/BuiltInFilters",
+		"/Users/jasonjacobson/Desktop/angularTEST/index.html",
+		"/Users/jasonjacobson/Desktop/angularTEST/binding.html",
+		"/Users/jasonjacobson/Desktop/angularTEST/js/jjBoot.js",
+		"/Users/jasonjacobson/xJD/HighCharts/ReportsCUTTINGPie.html",
+		"/Users/jasonjacobson/xJD/GIT/theSite/kaoCA.html",
+		"/Users/jasonjacobson/xJD/HighCharts/ReportsKAO.html",
+		"/Users/jasonjacobson/Desktop/angularTEST/js/app.js",
+		"/Users/jasonjacobson/Desktop/angularTEST/angTEST.html",
+		"/Users/jasonjacobson/xJD/GIT/angular.js/src/Angular.js",
+		"/Users/jasonjacobson/xJD/GIT/angular.js/CONTRIBUTING.md"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\n",
+			"0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 47.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "angularJSbooted.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

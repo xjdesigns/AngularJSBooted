@@ -29,6 +29,7 @@ jjBoot.controller('classBootCtrl', function($scope, $location) {
 
 jjBoot.controller('glyphBootCtrl', function($scope, $location, $q) {
     $scope.title = 'GLYPHICON ';
+    $scope.message = 'Like this copy, elements are dynamic.';
 
 
     // var defer = $q.defer();
